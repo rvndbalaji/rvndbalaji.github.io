@@ -8,6 +8,10 @@
 
 #top-banner
 {
+<<<<<<< HEAD
+=======
+    padding-top: 5%;
+>>>>>>> origin/master
     font-family: 'Russo One',sans-serif;
     color: white;
 }
@@ -50,14 +54,24 @@ body {
 
 #subtitle
 {
+<<<<<<< HEAD
     font-size: 45%;
+=======
+    line-height: 100%;
+    font-size: 180%;
+>>>>>>> origin/master
     text-shadow: 0px 0px 4px white;
 }
 #my_name
 {
     margin-top: 0%;
     line-height: 100%;
+<<<<<<< HEAD
     font-size: 350%;
+=======
+    font-size: 80;
+
+>>>>>>> origin/master
     text-shadow: 0px 0px 4px white;
 }
 
