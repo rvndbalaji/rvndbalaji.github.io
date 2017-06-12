@@ -27,7 +27,7 @@ body {
     background-attachment: fixed;
     background-position: bottom;
     background-image: url(/images/top-banner.jpg);
-   clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+   /*clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);*/
    background-color: rgba(0,0,0,0.5);
    background-blend-mode: multiply;
 }
