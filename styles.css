@@ -21,7 +21,7 @@ body {
 {
     text-align:center;
     vertical-align: middle;
-    min-height:60%;
+    height: 60%;
     padding-top:8%;
     background-size: cover;
     background-attachment: fixed;
