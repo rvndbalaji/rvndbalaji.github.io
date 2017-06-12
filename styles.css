@@ -13,7 +13,7 @@
 }
 
 body {
-    margin: 0;
+    margin: 0%;
     background-color: rgba(1,87,155,0.1)
 }
 
@@ -22,7 +22,7 @@ body {
     text-align:center;
     vertical-align: middle;
     height:60%;
-    padding-top:80;
+    padding-top:8%;
     background-size: cover;
     background-attachment: fixed;
     background-position: bottom;
@@ -36,13 +36,13 @@ body {
 {
     position: absolute;
     margin: auto;
-    top:  170;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    height: 200;
-    width: 200;
-    box-shadow: 0px 0px 5px 4px rgba(0,0,0,0.5);
+    top:  30%;
+    bottom: 0%;
+    right: 0%;
+    left: 0%;
+    height: 12.5em;
+    width: 12.5em%;
+    box-shadow: 0 0 0.3125em 0.5em rgba(0,0,0,0.5);
     border-radius: 100%;
 }
 
@@ -50,35 +50,36 @@ body {
 #subtitle
 {
     font-size: 45%;
-    text-shadow: 0px 0px 2px white;
+    text-shadow: 0em     text-shadow: 0em 0em 0.09em white;
+ 0.125em white;
 }
 #my_name
 {
     margin-top: 0%;
     line-height: 1.5;
     font-size: 350%;
-    text-shadow: 0px 0px 2px white;
+    text-shadow: 0em 0em 0.09em white;
 }
 
 .icon
 {
-    padding: 0px;
-    margin: 10px;
+    padding: 0em;
+    margin: 0.6em;
     border-radius: 100%;
-    height: 48;
+    height: 3em;
     background-color: rgba(234,234,234,1);
     transition: 0.25s box-shadow;
 }
 .icon:hover
 {
-    box-shadow: 0px 0px 10px 0px #ffffff;
+    box-shadow: 0em 0em 0.625em 0em #ffffff;
 }
 
 /*START OF ABOUT.HTML*/
 #about_box, #skills
 {
-    margin-top: 70;
-    padding: 4;
+    margin-top: 4.375em;
+    padding: 0.25em;
     text-align: center
 }
 #skills
@@ -100,6 +101,6 @@ body {
 .title_text {
     font-family: 'Helvetica',serif;
     color: #01579B;
-    text-shadow: 0px 0px 0.5px rgba(1,87,155,0.3);
+    text-shadow: 0em 0em 0.031em rgba(1,87,155,0.3);
     font-size: 170%;
 }
