@@ -22,7 +22,6 @@ body {
     text-align:center;
     vertical-align: middle;
     height:60%;
-    overflow: auto;
     padding-top:8%;
     background-size: cover;
     background-attachment: fixed;
@@ -43,7 +42,7 @@ body {
     left: 0%;
     max-height: 30%;
     max-width: 30%;
-    box-shadow: 0 0 0.3125em 0.5em rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.5);
     border-radius: 100%;
 }
 
@@ -51,36 +50,35 @@ body {
 #subtitle
 {
     font-size: 45%;
-    text-shadow: 0em     text-shadow: 0em 0em 0.09em white;
- 0.125em white;
+    text-shadow: 0px 0px 4px white;
 }
 #my_name
 {
     margin-top: 0%;
-    line-height: 1.5;
+    line-height: 100%;
     font-size: 350%;
-    text-shadow: 0em 0em 0.09em white;
+    text-shadow: 0px 0px 4px white;
 }
 
 .icon
 {
-    padding: 0em;
-    margin: 0.6em;
+    padding: 0;
+    margin: 2%;
     border-radius: 100%;
-    height: 3em;
+    height: 12%;
     background-color: rgba(234,234,234,1);
     transition: 0.25s box-shadow;
 }
 .icon:hover
 {
-    box-shadow: 0em 0em 0.625em 0em #ffffff;
+    box-shadow: 0px 0px 10px 0px #ffffff;
 }
 
 /*START OF ABOUT.HTML*/
 #about_box, #skills
 {
-    margin-top: 4.375em;
-    padding: 0.25em;
+    margin-top: 8%;
+    padding: 3%;
     text-align: center
 }
 #skills
@@ -88,10 +86,6 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     background-image: url(/images/skill-banner.jpg);
 }
-
-
-
-
 
 
 #about_text {
@@ -102,6 +96,6 @@ body {
 .title_text {
     font-family: 'Helvetica',serif;
     color: #01579B;
-    text-shadow: 0em 0em 0.031em rgba(1,87,155,0.3);
+    text-shadow: 0px 0px 2px  rgba(1,87,155,0.3);
     font-size: 170%;
 }
