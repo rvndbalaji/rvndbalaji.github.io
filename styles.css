@@ -8,7 +8,7 @@
 
 #top-banner
 {
-    padding-top: 10%;
+    padding-top: 5%;
     font-family: 'Russo One',sans-serif;
     color: white;
 }
@@ -51,14 +51,15 @@ body {
 
 #subtitle
 {
-    font-size: 145%;
+    line-height: 100%;
+    font-size: 180%;
     text-shadow: 0px 0px 4px white;
 }
 #my_name
 {
     line-height: 100%;
-    font-size: 350%;
-    height:60;
+    font-size: 80;
+
     text-shadow: 0px 0px 4px white;
 }
 
