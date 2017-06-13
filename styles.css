@@ -10,12 +10,15 @@
 .jumbotron
 {
    height: 40rem;
-   background-image: url(images/top-banner.jpg);
    text-align: center;
-   background-color: rgba(0,0,0,0.5);
-   background-blend-mode: multiply;
+    z-index: 2;
+    background-size: cover;
+    background-attachment:fixed;
+    background-position: bottom;
+    background-image: url(/images/top-banner.jpg);
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: multiply;
 }
-
 
 .jumbo
 {
@@ -43,3 +46,4 @@
     margin: 1em;
     transition: 0.3s box-shadow;
 }
+
