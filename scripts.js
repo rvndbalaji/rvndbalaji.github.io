@@ -7,9 +7,9 @@ google.charts.load("current", {packages:["corechart"]});
         var data = google.visualization.arrayToDataTable([
           ['Skill', 'Experience'],
           ['Java | Android', 49],
-          ['HTML | CSS | JS', 20],
+          ['HTML | CSS | JS | SQL', 20],
           ['Visual Basic', 16],
-          ['PHP | SQL', 8],
+          ['PHP', 8],
           ['Python', 7],
         ]);
 
@@ -37,17 +37,17 @@ google.charts.load("current", {packages:["corechart"]});
             },
           slices:
             {
-              0: { color : '#F44336', offset : 0.2 },
-              1: { color : '#4CAF50', offset : 0.175 },
-              2: { color : '#673AB7', offset : 0.15 },
-              3: { color : '#FFEB3B', offset : 0.125 },
-              4: { color : '#2196F3', offset : 0.1 },
+              0: { color : '#F44336', offset : 0.1 },
+              1: { color : '#4CAF50', offset : 0.075 },
+              2: { color : '#7E57C2', offset : 0.05 },
+              3: { color : '#FFEB3B', offset : 0.025 },
+              4: { color : '#2196F3', offset : 0.0 },
             },
             pieSliceTextStyle :
             {
                 color: 'black',
                 fontName: 'Russo One',
-                fontSize : 11
+                fontSize : 10
             },
 
           backgroundColor: 'transparent',
