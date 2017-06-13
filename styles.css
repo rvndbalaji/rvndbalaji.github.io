@@ -51,7 +51,8 @@
 #dp
 {
     box-shadow: 0 0 1rem 0.3rem rgba(0,0,0,0.5);
-    max-width: 20rem;
+    max-width: 65%;;
+    max-height: 65%;
     margin: auto;
     margin-top: 2rem;
 }
