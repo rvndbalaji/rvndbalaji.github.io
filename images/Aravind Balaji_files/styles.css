@@ -54,7 +54,7 @@
 }
 #skills
 {
-    height: 50rem;
+    height: 40rem;
     padding: 3%;
     background-position: bottom;
     text-align: center;
@@ -92,11 +92,3 @@
 }
 
 
-
-#donutchart
-{
-    margin: auto;
-    margin-top: 4rem;
-    width: 70%;
-    height: 70%;;
-}
