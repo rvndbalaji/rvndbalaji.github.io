@@ -1,7 +1,6 @@
 .jumbotron
 {
     height: 40rem;
-    margin-right: auto;
     text-align: center;
     background-image: url(/images/top-banner.jpg);
     background-position: bottom;
@@ -10,7 +9,6 @@
 .overlay
 {
     background-size: cover;
-
     background-attachment:fixed;
     background-repeat: no-repeat;
     background-color: rgba(0,0,0,0.5);
@@ -27,7 +25,10 @@
 #my_name {
     font-size: 420%;
 }
-
+body
+{
+     background-color: rgba(1,87,155,0.1);
+}
 .img-circle:hover {
     box-shadow: 0 0 0.5em 0.1em white;
 }
@@ -47,7 +48,7 @@
 }
 
 /*START OF ABOUT.HTML*/
-#about_box
+#about_text
 {
     padding: 3%;
     text-align: center;
@@ -58,8 +59,6 @@
     padding: 3%;
     background-position: bottom;
     text-align: center;
-    -webkit-clip-path:polygon(0 0, 100% 0, 100% 70%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     background-image: url(/images/skill-banner.jpg);
 }
 
@@ -76,15 +75,9 @@
     font-size: 170%;
 }
 
-
-
 #head {
      margin-top: 3rem;
     text-shadow: 0 0 0.3rem;
-}
-
-#body {
-
 }
 
 #skill_title {
@@ -96,7 +89,19 @@
     margin: auto;
     margin-top: 4rem;
     width: 90%;
-    height: 80%;;
+    height: 80%;
 }
 
 
+.background {
+    height: auto;
+    background-color: black;
+}
+
+
+#particles-js
+{
+    /*background-color: rgba(0,0,0,0.0);*/
+    height: 20em;
+    margin-top: 10rem;
+}

@@ -1,4 +1,4 @@
-
+//------------------------Generate the PieChart using the Google Vizualization API----------------------------------------------
 google.charts.load("current", {packages:["corechart"]});
  google.charts.setOnLoadCallback(drawChart);
 
