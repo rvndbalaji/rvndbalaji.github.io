@@ -6,32 +6,48 @@ google.charts.load("current", {packages:["corechart"]});
     {
         var data = google.visualization.arrayToDataTable([
           ['Skill', 'Experience'],
-          ['Java/Android', 50],
-          ['Visual Basic', 20],
-          ['HTML/CSS', 10],
-          ['PHP',  10],
-          ['Python', 10],
-
+          ['Java | Android', 49],
+          ['HTML | CSS | JS', 20],
+          ['Visual Basic', 16],
+          ['PHP | SQL', 8],
+          ['Python', 7],
         ]);
 
         var options =
         {
           pieHole: 0.4,
-          pieSliceText: 'label',
+          pieSliceText: 'none',
           fontSize: 13,
+
            legend :
             {
-              position: 'none',
+              position: 'labeled',
+              textStyle:
+                {
+                   color: 'white',
+                   fontName: 'Russo One' ,
+                    bold: false,
+                },
+                alignment: 'center'
             },
             chartArea:
             {
-                 width:'100%',
-                 height:'100%'
+                 width:'90%',
+                 height:'90%'
             },
           slices:
             {
-              0: { color : '#8BC34A' },
-              1: { color : '#8BC34A' }
+              0: { color : '#8BC34A', offset : 0.2 },
+              1: { color : '#8BC34A', offset : 0. },
+              2: { color : '#8BC34A', offset : 0.0 },
+              3: { color : '#8BC34A', offset : 0.1 },
+              4: { color : '#8BC34A', offset : 0.0 },
+              5: { color : '#8BC34A', offset : 0.0 }
+            },
+            pieSliceTextStyle :
+            {
+                color: 'black',
+                fontName: 'Russo One'
             },
 
           backgroundColor: 'transparent',
