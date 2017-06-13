@@ -16,7 +16,7 @@ google.charts.load("current", {packages:["corechart"]});
         var options =
         {
           pieHole: 0.4,
-          pieSliceText: 'none',
+          pieSliceText: 'label',
           fontSize: 13,
 
            legend :
@@ -26,7 +26,7 @@ google.charts.load("current", {packages:["corechart"]});
                 {
                    color: 'white',
                    fontName: 'Russo One' ,
-                    bold: false,
+                   bold: false,
                 },
                 alignment: 'center'
             },
@@ -37,7 +37,7 @@ google.charts.load("current", {packages:["corechart"]});
             },
           slices:
             {
-              0: { color : '#8BC34A', offset : 0.2 },
+              0: { color : '#F44336', offset : 0.2 },
               1: { color : '#8BC34A', offset : 0. },
               2: { color : '#8BC34A', offset : 0.0 },
               3: { color : '#8BC34A', offset : 0.1 },
