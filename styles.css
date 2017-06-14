@@ -51,12 +51,8 @@ body
 #about_text
 {
     padding: 3%;
+    font-size: 120%;
     text-align: center;
-}
-
-
-#about_text {
-     font-size: 120%;
 }
 
 
@@ -129,16 +125,6 @@ body
     padding: 3%;
 }
 
-
-
-.my_container {
-    margin: 0;
-    position: absolute;
-    background-color: transparent;
-    text-align: center;
-    display: inline-block;
-}
-
 li
 {
     display: inline-flex;
@@ -191,8 +177,6 @@ a:hover, a:active, a:focus, a:visited, a:active
     margin-top: 6rem;
 }
 
-.navbar
-{
-    background-color: black;
-    margin :0;
+.navbar {
+    margin: 0;
 }
