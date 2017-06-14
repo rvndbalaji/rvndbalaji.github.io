@@ -3,7 +3,6 @@
 
     height: 60rem;;
     text-align: center;
-    /*background-color:  rgba(1,87,155,0.1);*/
    background-color:  rgba(0,0,0,1);
     background-position: bottom;
 
@@ -174,10 +173,6 @@ a:hover, a:active, a:focus, a:visited, a:active
 
 .container-fluid {
     margin-top: 6rem;
-}
-
-.navbar {
-    margin: 0;
 }
 
 
