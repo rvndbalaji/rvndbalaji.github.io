@@ -1,7 +1,7 @@
 .jumbotron
 {
 
-    height: 70rem;;
+    height: 60rem;;
     text-align: center;
     /*background-color:  rgba(1,87,155,0.1);*/
    background-color:  rgba(0,0,0,1);
@@ -22,6 +22,7 @@
 }
 body
 {
+
     overflow-x: hidden;
     background-color: rgba(0,0,0,0.1);
 }
@@ -127,4 +128,82 @@ body
     text-align: center;
     height: 50rem;
     padding: 3%;
+}
+
+
+
+.my_container {
+    margin: 0;
+    position: absolute;
+    background-color: transparent;
+    text-align: center;
+    display: inline-block;
+}
+
+li
+{
+    margin-right: 4rem;
+    margin-left:  4rem;
+    display: inline-block;
+}
+
+a {
+
+    font-weight: bold;
+    font-family: monospace,monospace;
+}
+
+.hyperlink
+{
+     font-size: 2rem;
+    z-index: 4;
+    position: relative;
+    cursor: pointer;
+    cursor: hand;
+	border-bottom: 2px solid transparent;
+	transition: border 400ms;
+	color: #ffffff;
+
+}
+.hyperlink:hover
+{
+    color: #ffffff;
+    text-shadow: 0 0 1rem white;
+    text-decoration: none;
+	border-bottom:2px solid #ffffff;
+}
+
+/*Animations */
+@keyframes appear
+{
+	from { opacity: 0;}
+	to {opacity: 1}
+}
+
+
+
+
+
+
+.navbar
+{
+    background-color: black;
+    margin :0
+}
+
+
+
+
+
+
+
+
+
+
+.container-fluid {
+    margin-top: 12rem;
+}
+
+ul {
+    margin-top: 5rem;
 }
