@@ -176,3 +176,7 @@ a:hover, a:active, a:focus, a:visited, a:active
 }
 
 
+
+.navbar-fixed-top {
+    position: absolute;
+}
