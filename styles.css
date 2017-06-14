@@ -142,7 +142,7 @@ body
 li
 {
    margin: 3rem;
-    display: inline;
+    display: inline-flex;
 }
 
 a {
