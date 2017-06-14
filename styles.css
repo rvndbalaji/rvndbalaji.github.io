@@ -142,13 +142,17 @@ body
 li
 {
    margin: 3rem;
-    display: inline-block;
+    display: inline;
 }
 
 a {
-
     font-weight: bold;
     font-family: monospace,monospace;
+}
+a:hover, a:active, a:focus, a:visited, a:active
+{
+    text-decoration: none;
+    color: white;
 }
 
 .hyperlink
