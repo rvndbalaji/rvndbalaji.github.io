@@ -22,7 +22,7 @@
 }
 body
 {
-    margin-right: -2rem;
+
     overflow-x: hidden;
     background-color: rgba(0,0,0,0.1);
 }
@@ -144,8 +144,6 @@ a:hover, a:active, a:focus, a:visited, a:active
 .hyperlink
 {
     margin-top: 1rem;
-     margin-right: 0.5rem;
-    margin-left: 0.5rem;
     padding: 1rem;
      font-size: 2rem;
     z-index: 4;
