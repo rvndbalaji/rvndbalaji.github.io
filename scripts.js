@@ -28,7 +28,7 @@ google.charts.load("current", {packages:["corechart"]});
               position: 'labeled',
               textStyle:
                 {
-                   color: 'white',
+                   color: '#01579B',
                    fontName: 'Russo One' ,
                    bold: false,
                 },
