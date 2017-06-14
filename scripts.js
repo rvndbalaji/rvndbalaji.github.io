@@ -1,4 +1,4 @@
-//------------------------Generate the PieChart using the Google Vizualization API----------------------------------------------
+//------------------------Generate the PieChart using the Google Vizualization API---------------------------------------------
 google.charts.load("current", {packages:["corechart"]});
  google.charts.setOnLoadCallback(drawChart);
 
@@ -28,9 +28,9 @@ google.charts.load("current", {packages:["corechart"]});
               position: 'labeled',
               textStyle:
                 {
-                   color: '#01579B',
-                   fontName: 'Russo One' ,
-                   bold: false,
+                   color: '#000000',
+                   fontName: 'monospace' ,
+                   bold: true,
                 },
                 alignment: 'center'
             },
@@ -67,3 +67,40 @@ google.charts.load("current", {packages:["corechart"]});
         var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
         chart.draw(data, options);
     }
+
+    var text = "Coder. Designer. Enthusiast";
+
+    var type = function(component,message,index,interval)
+    {
+
+        if(index < message.length)
+            {
+                $(component).append(message[index++]);
+                setTimeout(function()
+                {
+                   type(component,message,index,interval)
+                },interval);
+            }
+    }
+
+  $(document).ready(function()
+    {
+      //Animate typing effect
+       type("#my_subtitle",text,-1,100);
+
+
+    //Smooth scroll
+      $('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+    }, 1000);
+    return false;
+});
+
+
+    });
+
+
+
+
+

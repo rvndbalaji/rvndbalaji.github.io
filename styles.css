@@ -1,42 +1,37 @@
 .jumbotron
 {
-    height: 40rem;
+
+    height: 70rem;;
     text-align: center;
-    background-image: url(/images/top-banner.jpg);
+    /*background-color:  rgba(1,87,155,0.1);*/
+   background-color:  rgba(0,0,0,1);
     background-position: bottom;
 
-}
-.overlay
-{
-
-    background-size: cover;
-    background-attachment:fixed;
-    background-repeat: no-repeat;
-    background-color: rgba(0,0,0,0.5);
-    background-blend-mode: multiply;
 }
 
 .jumbo_text
 {
-    font-family: 'Russo One',serif;
+    font-family: monospace,serif;
     color: #ffffff;
     text-shadow: 0px 0px 1px white;
 }
 
 #my_name
 {
-    font-size: 390%;
+    font-size: 400%;
 }
 body
 {
     overflow-x: hidden;
-    background-color: rgba(1,87,155,0.1);
+    background-color: rgba(0,0,0,0.1);
 }
 .img-circle:hover {
     box-shadow: 0 0 0.5em 0.1em white;
 }
 .img-circle
 {
+    position: relative;
+    z-index: 3;
     margin: 1em;
     transition: 0.3s box-shadow;
 }
@@ -58,14 +53,6 @@ body
     padding: 3%;
     text-align: center;
 }
-#skills
-
-{
-    height: 50rem;
-    padding: 3%;
-    background-color: transparent;
-    text-align: center;
-}
 
 
 #about_text {
@@ -75,8 +62,8 @@ body
 
 .title_text {
     font-family: 'Helvetica',serif;
-    color: #01579B;
-    text-shadow: 0px 0px 2px  rgba(1,87,155,0.3);
+    color: #000000;
+    text-shadow: 0 0rem 0.01rem rgba(0,0,0,0.5);
     font-size: 170%;
 }
 
@@ -87,7 +74,7 @@ body
 
 #skill_title
 {
-    color:  #01579B;
+    color:  #000000;
     font-size: 200%;
 }
 
@@ -99,23 +86,45 @@ body
     height: 80%;
 }
 
-
-.background {
-    height: auto;
-    background-color: black;
-}
-
-
-#particles-js
-{
-    z-index: -1;
-    position: relative;
-    /*background-color: rgba(0,0,0,0.0);*/
-    height: 20em;
-    margin-top: 10rem;
-}
-
 #my_subtitle
 {
     font-size: 190%;
+}
+
+#my_subtitle:after {
+    content: "_";
+    opacity: 1;
+    animation: cursor 1s infinite;
+}
+@keyframes cursor
+{
+    0% { opacity:  0.0; }
+    10% { opacity: 0.2; }
+    20% { opacity: 0.4; }
+    30% { opacity: 0.6; }
+    40% { opacity: 0.8; }
+    50% { opacity: 1.0; }
+    60% { opacity: 0.8; }
+    70% { opacity: 0.6; }
+    80% { opacity: 0.4; }
+    90% { opacity: 0.2; }
+    100% { opacity: 0; }
+}
+
+
+#p_white
+{
+    z-index: 2;
+    position: relative;
+    margin-top: -35rem;
+    height: 70rem;
+
+}
+
+
+
+#skills {
+    text-align: center;
+    height: 50rem;
+    padding: 3%;
 }
