@@ -142,8 +142,7 @@ body
 
 li
 {
-    margin-right: 4rem;
-    margin-left:  4rem;
+   margin: 3rem;
     display: inline-block;
 }
 
@@ -160,7 +159,7 @@ a {
     position: relative;
     cursor: pointer;
     cursor: hand;
-	border-bottom: 2px solid transparent;
+	border-bottom: 2px solid gray;
 	transition: border 400ms;
 	color: #ffffff;
 
@@ -204,6 +203,4 @@ a {
     margin-top: 12rem;
 }
 
-ul {
-    margin-top: 5rem;
-}
+
