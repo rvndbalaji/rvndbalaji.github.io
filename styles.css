@@ -141,7 +141,6 @@ body
 
 li
 {
-   margin: 3rem;
     display: inline-flex;
 }
 
@@ -157,13 +156,17 @@ a:hover, a:active, a:focus, a:visited, a:active
 
 .hyperlink
 {
+    margin-top: 1rem;
+     margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    padding: 1rem;
      font-size: 2rem;
     z-index: 4;
     position: relative;
     cursor: pointer;
     cursor: hand;
     text-shadow: 0 0 0 white;
-	border-bottom: 2px solid gray;
+	border-bottom: 2px solid transparent;
 	transition: border 400ms;
 	color: #ffffff;
 
@@ -185,13 +188,11 @@ a:hover, a:active, a:focus, a:visited, a:active
 
 
 .container-fluid {
-    margin-top: 7rem;
+    margin-top: 6rem;
 }
 
 .navbar
 {
     background-color: black;
     margin :0;
-    width: 100%;
-
 }
