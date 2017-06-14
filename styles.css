@@ -115,10 +115,10 @@ body
 
 #p_white
 {
-    z-index: 2;
+    z-index: 0;
     position: relative;
-    margin-top: -35rem;
-    height: 80rem;
+    margin-top : -46rem;
+    height: 67rem;
 
 }
 
@@ -159,6 +159,7 @@ a {
     position: relative;
     cursor: pointer;
     cursor: hand;
+    text-shadow: 0 0 0 white;
 	border-bottom: 2px solid gray;
 	transition: border 400ms;
 	color: #ffffff;
@@ -166,8 +167,8 @@ a {
 }
 .hyperlink:hover
 {
+   text-shadow: 0 0 1rem white;
     color: #ffffff;
-    text-shadow: 0 0 1rem white;
     text-decoration: none;
 	border-bottom:2px solid #ffffff;
 }
@@ -175,32 +176,17 @@ a {
 /*Animations */
 @keyframes appear
 {
-	from { opacity: 0;}
-	to {opacity: 1}
+	from { opacity: 0;  }
+    to   { opacity: 1;  }
 }
-
-
-
-
-
-
-.navbar
-{
-    background-color: black;
-    margin :0
-}
-
-
-
-
-
-
-
-
 
 
 .container-fluid {
     margin-top: 12rem;
 }
 
-
+.navbar
+{
+    background-color: black;
+    margin :0
+}
