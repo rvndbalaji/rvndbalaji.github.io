@@ -4,7 +4,6 @@
     text-align: center;
     background-position: bottom;
     background-color: transparent;
-
 }
 .jumbo_text
 {
@@ -20,7 +19,7 @@
 body
 {
     overflow-x: hidden;
-    background-color: rgba(0,0,0,1);
+    background-color: #090909;
 }
 .img-circle:hover {
     box-shadow: 0 0 0.5em 0.1em white;
@@ -37,7 +36,7 @@ body
 {
     z-index: 2;
     position: relative;
-    box-shadow: 0 0 1em 0.1rem white;
+    box-shadow: 0 0 1em 0.05rem white;
     max-width: 20rem;;
     max-height: 20rem;
     margin: auto;
@@ -53,31 +52,11 @@ body
 }
 
 
-.title_text {
-    font-family: 'Helvetica',serif;
+.title_text
+{
     color: #ffffff;
-    text-shadow: 0 0rem 0.3rem white;
+    text-shadow: 0 0rem 0.1rem white;
     font-size: 150%;
-}
-
-#head {
-    margin-top: -1rem;
-    text-shadow: 0 0 0.3rem white;
-}
-
-#skill_title
-{
-    color:  #ffffff;
-    font-size: 200%;
-    text-shadow: 0 0 0.3rem white;
-}
-
-#donutchart
-{
-    margin: auto;
-    margin-top: 4rem;
-    width: 90%;
-    height: 80%;
 }
 
 #my_subtitle
@@ -85,7 +64,8 @@ body
     font-size: 190%;
 }
 
-#my_subtitle:after {
+#my_subtitle:after
+{
     content: "_";
     opacity: 1;
     animation: cursor 1s infinite;
@@ -93,18 +73,9 @@ body
 @keyframes cursor
 {
     0% { opacity:  0.0; }
-    10% { opacity: 0.2; }
-    20% { opacity: 0.4; }
-    30% { opacity: 0.6; }
-    40% { opacity: 0.8; }
     50% { opacity: 1.0; }
-    60% { opacity: 0.8; }
-    70% { opacity: 0.6; }
-    80% { opacity: 0.4; }
-    90% { opacity: 0.2; }
     100% { opacity: 0; }
 }
-
 
 #p_white
 {
@@ -112,15 +83,6 @@ body
     position: relative;
     margin-top : -50rem;
     height: 67rem;
-
-}
-
-
-
-#skills {
-    text-align: center;
-    height: 50rem;
-    padding: 3%;
 }
 
 li
@@ -173,64 +135,78 @@ ul {
 
 .skill_box
 {
-    color: white;
-    padding: 1rem;
+    color: black;
+    padding-top: 1rem;
     margin: 1rem;
-    transition: box-shadow 200ms;
-    transition: background-color 400ms;
-    transition: color 200ms;
+    transition: box-shadow 400ms;
+    transition: transform 200ms;
 }
-#skill_box:hover
-{
-    opacity: 0;
-}
-
-
 .skill_box:hover
 {
-    color: black;
+    transform: translateY(-12%);
 }
 
 .section {
-     margin-top: 6rem;
+    margin-top: 6rem;
 }
 
 .skill_title {
     font-size: 250%;
-
 }
-
+.skill_desc
+{
+    padding-bottom: 1rem;
+}
 .skill_android
 {
- border: 3px solid #8BC34A;
+ background-color: #8BC34A;
+
 }
 .skill_android:hover
 {
-    background-color: #8BC34A;
+    box-shadow: 0 0 0.5em 0.1em #8BC34A;
 }
-
-
 
 .skill_web {
-   border: 3px solid #E44D26;
-}
-
-.skill_web:hover {
    background-color: #E44D26;
 }
 
+.skill_web:hover {
+   box-shadow: 0 0 0.5em 0.1em #E44D26;
+}
+
 .skill_vb {
-     border: 3px solid #0079CC;
+     background-color: #0079CC;
 }
 .skill_vb:hover
 {
-    background-color: #0079CC;
+   box-shadow: 0 0 0.5em 0.1em #0079CC;
 }
 
 .skill_other {
- border: 3px solid #FFB300;
+ background-color: #FFB300;
+
 }
 .skill_other:hover
 {
-    background-color: #FFB300;
+    box-shadow: 0 0 0.5em 0.1em #FFB300;
+}
+
+.view_project
+{
+    background-color: rgba(0,0,0,0.1);
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    transition: background-color 400ms;
+}
+.view_project:hover
+{
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+    cursor:  hand;
+}
+.view_project a
+{
+	color: #000000;
 }

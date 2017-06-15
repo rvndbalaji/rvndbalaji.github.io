@@ -13,20 +13,23 @@
             }
     }
 
-  $(document).ready(function()
-    {
+$(document).ready(function()
+{
 
-      //Animate typing effect
+  //1. Animate typing effect
        type("#my_subtitle",text,-1,100);
 
 
-    //Smooth scroll
-      $('a').click(function(){
-    $('html, body').animate({
-        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
-    }, 1000);
-    return false;
-});
+  //2.Smooth scroll
+      $('a').click(function()
+                   {
+                        $('html, body').animate(
+                            {
+                                scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+                            }, 1000);
+                    return false;
+                  });
+
 
       /*Auto-click the HOME button ONLY if its a mobile browser
       if(mobilecheck())
