@@ -1,13 +1,11 @@
 .jumbotron
 {
-
-    height: 60rem;;
+    height: 60rem;
     text-align: center;
-   background-color:  rgba(0,0,0,1);
     background-position: bottom;
+    background-color: transparent;
 
 }
-
 .jumbo_text
 {
     font-family: monospace,monospace;
@@ -22,7 +20,7 @@
 body
 {
     overflow-x: hidden;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(0,0,0,1);
 }
 .img-circle:hover {
     box-shadow: 0 0 0.5em 0.1em white;
@@ -39,7 +37,7 @@ body
 {
     z-index: 2;
     position: relative;
-    box-shadow: 0 0 1rem 0.3rem rgba(0,0,0,0.5);
+    box-shadow: 0 0 1em 0.1rem white;
     max-width: 20rem;;
     max-height: 20rem;
     margin: auto;
@@ -57,20 +55,21 @@ body
 
 .title_text {
     font-family: 'Helvetica',serif;
-    color: #000000;
-    text-shadow: 0 0rem 0.01rem rgba(0,0,0,0.5);
+    color: #ffffff;
+    text-shadow: 0 0rem 0.3rem white;
     font-size: 170%;
 }
 
 #head {
-     margin-top: -1rem;
-    text-shadow: 0 0 0.3rem;
+    margin-top: -1rem;
+    text-shadow: 0 0 0.3rem white;
 }
 
 #skill_title
 {
-    color:  #000000;
+    color:  #ffffff;
     font-size: 200%;
+    text-shadow: 0 0 0.3rem white;
 }
 
 #donutchart
@@ -162,20 +161,76 @@ a:hover, a:active, a:focus, a:visited, a:active
 	border-bottom:2px solid #ffffff;
 }
 
-/*Animations */
-@keyframes appear
-{
-	from { opacity: 0;  }
-    to   { opacity: 1;  }
-}
 
-.container-fluid {
-    margin-top: 6rem;
-}
+
 .navbar-fixed-top {
     position: absolute;
 }
 
 ul {
      margin-right: 3rem;
+}
+
+.skill_box
+{
+    color: white;
+    padding: 1rem;
+    margin: 1rem;
+    transition: box-shadow 200ms;
+    transition: background-color 400ms;
+    transition: color 200ms;
+}
+#skill_box:hover
+{
+    opacity: 0;
+}
+
+
+.skill_box:hover
+{
+    color: black;
+}
+
+.section {
+     margin-top: 6rem;
+}
+
+.skill_title {
+    font-size: 250%;
+
+}
+
+.skill_android
+{
+ border: 3px solid #8BC34A;
+}
+.skill_android:hover
+{
+    background-color: #8BC34A;
+}
+
+
+
+.skill_web {
+   border: 3px solid #E44D26;
+}
+
+.skill_web:hover {
+   background-color: #E44D26;
+}
+
+.skill_vb {
+     border: 3px solid #0079CC;
+}
+.skill_vb:hover
+{
+    background-color: #0079CC;
+}
+
+.skill_other {
+ border: 3px solid #FFB300;
+}
+.skill_other:hover
+{
+    background-color: #FFB300;
 }

@@ -6,12 +6,8 @@
   <head>
   <!--jQUERY should always come first before Bootstrap-->
 
-<script
-  src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-<script type="text/javascript" src="scripts.js"></script>
-<script type="text/javascript" src="chart.js"></script>
+<script src="frameworks/jquery-3.2.1.js"></script>
+
 
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,18 +17,10 @@
 
 <!----------------BOOTSTRAP----------------------->
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-
+<link rel="stylesheet" href="frameworks/bootstrap.min.css">
 <!----------------GOOGLE FONTS----------------------->
 <!--link href="https://fonts.googleapis.com/css?family=Monospace" rel="stylesheet"--->
-    <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css">
 
 <!--------------------------------------------------------------------------------------------------->
   </head>
@@ -45,65 +33,97 @@
           </ul>
 
       </div>
-      <a name="start"></a>
     </nav>
 
-</div>
+
     <a name="start"></a>
-    <div id= "fullpage" class="jumbotron row">
+    <div class="jumbotron row">
 
-        <div class="container-fluid jumbo_text section">
+                <div class="container-fluid jumbo_text section">
+                        <span id="my_name">Aravind Balaji</span>
+                        <br><br><br>
+                        <span id="my_subtitle">> </span><br><br>
 
+                       <a href="https://www.facebook.com/rvnd.balaji"  target="_blank">
+                           <img id="fb" class="img-circle" src="images/facebook.png"></img>
+                       </a>
 
-            <span id="my_name">Aravind Balaji</span>
-            <br><br><br>
+                       <a href="https://github.com/rvndbalaji" target="_blank" >
+                           <img id="gh" class="img-circle" src="images/github.png"></img>
+                       </a>
 
-             <span id="my_subtitle">> </span><br><br>
+                       <a href="https://www.linkedin.com/in/aravindbalaji/" target="_blank">
+                           <img id="li" class="img-circle" src="images/linkedin.png"></img>
+                       </a>
 
-             <a href="https://www.facebook.com/rvnd.balaji"  target="_blank">
-           <img id="fb" class="img-circle" src="images/facebook.png"></img>
-      </a>
-
-      <a href="https://github.com/rvndbalaji" target="_blank" >
-       <img id="gh" class="img-circle" src="images/github.png"></img>
-    </a><a href="https://www.linkedin.com/in/aravindbalaji/" target="_blank">
-
-       <img id="li" class="img-circle" src="images/linkedin.png"></img>
-      </a>
-      <a href="https://play.google.com/store/apps/developer?id=Aravind+Balaji"  target="_blank">
-       <img id="play" class="img-circle" src="images/play.png"></img>
-      </a>
-
-
-<div id ="p_white"></div>
-
-   </div>
+                       <a href="https://play.google.com/store/apps/developer?id=Aravind+Balaji"  target="_blank">
+                           <img id="play" class="img-circle" src="images/play.png"></img>
+                       </a>
+                     <div id ="p_white"></div>
+                </div>
     </div>
 
     <img id="dp" src="images/dp.jpg" class="img-circle img-responsive" >
 
 <div id="about_text" class="row">
     <span id="about_title" class="title_text">
-    Hi there! I design and develop beautiful, engaging websites and feature-rich apps for Android </span>
+     Hi there! I design and develop beautiful, engaging websites and feature-rich apps for Android </span>
     <br>
 </div>
 
 
 
-<div id="skills" class="row">
+<div class="container-fluid">
+    <div class="row" align="center">
+        <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="skill_box row skill_android">
+                    <img id = "skill_img" src="images/android.png" class ="img-resposive"></img>
+                    <div class="skill_title">Android</div>
+                    <div class="skill_desc">
+                        Upto two years experience in Android development and four years in Java
+                    </div>
+            </div>
+        </div>
 
-
-   <br>
-    <span id="skill_title" class="font_heading jumbo_text">
-       I code many languages...
-    </span>
-<!-------------------PIE CHART------->
- <div id="donutchart"></div>
-<!----------------------------------->
+      <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="skill_box row skill_web">
+                    <img id = "skill_img" src="images/web.png" class ="img-resposive"></img>
+                    <div class="skill_title">Web Design</div>
+                    <div class="skill_desc">
+                     HTML | CSS  | JavaScript | PHP | SQL <br>Need I say more?
+                    </div>
+            </div>
+        </div>
+       <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="skill_box row skill_vb">
+                    <img id = "skill_img" src="images/vb.png" class ="img-resposive"></img>
+                    <div class="skill_title">Visual Basic</div>
+                    <div class="skill_desc">
+                        Over six years of experience making apps for Windows
+                    </div>
+            </div>
+        </div>
+       <div class="col-md-3 col-sm-3 col-xs-12">
+            <div class="skill_box row skill_other">
+                    <img id = "skill_img" src="images/code.png" class ="img-resposive"></img>
+                    <div class="skill_title">and others...</div>
+                    <div class="skill_desc">
+                        C | C++ | Python <br><br>
+                    </div>
+            </div>
+        </div>
+        <br>
+<br>
+<br>
+    </div>
 </div>
 
-<script src="particles.js"></script>
-<script src="particles_white.js"></script>
+
+
+
+<script src="scripts.js"></script>
+<script src="frameworks/particles.js"></script>
+<script src="frameworks/particles_white.js"></script>
 
  </body>
 </html>
