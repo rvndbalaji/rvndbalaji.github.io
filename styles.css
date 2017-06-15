@@ -156,6 +156,8 @@ ul {
 .skill_desc
 {
     padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 .skill_android
 {
