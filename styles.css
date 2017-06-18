@@ -3,7 +3,7 @@
     height: 60rem;
     text-align: center;
     background-position: bottom;
-    background-color: transparent;
+    background: linear-gradient(#000000,#d6d6d6);
 }
 .jumbo_text
 {
@@ -16,13 +16,9 @@
 {
     font-size: 390%;
 }
-body
-{
-    overflow-x: hidden;
-    background-color: #090909;
-}
+
 .img-circle:hover {
-    box-shadow: 0 0 0.5em 0.1em white;
+    box-shadow: 0 0 0.5em 0.1em black;
 }
 .img-circle
 {
@@ -36,7 +32,7 @@ body
 {
     z-index: 2;
     position: relative;
-    box-shadow: 0 0 1em 0.05rem white;
+    box-shadow: 0 0 1em 0.05rem black;
     max-width: 20rem;;
     max-height: 20rem;
     margin: auto;
@@ -54,8 +50,8 @@ body
 
 .title_text
 {
-    color: #ffffff;
-    text-shadow: 0 0rem 0.1rem white;
+    color: #000000;
+    text-shadow: 0 0rem 0.1rem black;
     font-size: 150%;
 }
 
@@ -117,7 +113,7 @@ a:hover, a:active, a:focus, a:visited, a:active
 }
 .hyperlink:hover
 {
-   text-shadow: 0 0 1rem white;
+   text-shadow: 0 0 0.3rem white;
     color: #ffffff;
     text-decoration: none;
 	border-bottom:2px solid #ffffff;
@@ -133,12 +129,15 @@ ul {
      margin-right: 3rem;
 }
 
+body
+{
+    overflow-x: hidden;
+}
 .skill_box
 {
     color: black;
     padding-top: 1rem;
     margin: 1rem;
-    transition: box-shadow 400ms;
     transition: transform 200ms;
 }
 .skill_box:hover
@@ -161,54 +160,50 @@ ul {
 }
 .skill_android
 {
- background-color: #8BC34A;
-
+  background-color: #8BC34A;
 }
-.skill_android:hover
+.skill_web
 {
-    box-shadow: 0 0 0.5em 0.1em #8BC34A;
+  background-color: #E44D26;
 }
-
-.skill_web {
-   background-color: #E44D26;
-}
-
-.skill_web:hover {
-   box-shadow: 0 0 0.5em 0.1em #E44D26;
-}
-
-.skill_vb {
-     background-color: #0079CC;
-}
-.skill_vb:hover
+.skill_other
 {
-   box-shadow: 0 0 0.5em 0.1em #0079CC;
+  background-color: #FFB300;
+}
+.skill_vb
+{
+  background-color: #0079CC;
 }
 
-.skill_other {
- background-color: #FFB300;
+#grad {
+    background: linear-gradient(#C9C9C9,#d6d6d6);
+    box-shadow: 0 0 10rem 1rem #C9C9C9;
 
 }
-.skill_other:hover
-{
-    box-shadow: 0 0 0.5em 0.1em #FFB300;
+
+#gallery {
+    background: linear-gradient(#d6d6d6,#C9C9C9);
 }
 
-.view_project
-{
-    background-color: rgba(0,0,0,0.1);
-    font-weight: bold;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    transition: background-color 400ms;
+
+.proj_box {
+    color: black;
 }
-.view_project:hover
+.proj
 {
-    background-color: rgba(0,0,0,0.5);
-    cursor: pointer;
-    cursor:  hand;
+    background-color: black;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
-.view_project a
+.proj div
 {
-	color: #000000;
+    height: 20rem;
+    margin-bottom: 5rem;
+}
+
+
+.proj_bookshare {
+    background-image: url(images/bookshare.jpeg);
+    background-size: cover;
+    background-position: center;
 }

@@ -31,11 +31,13 @@ $(document).ready(function()
                   });
 
 
-      /*Auto-click the HOME button ONLY if its a mobile browser
-      if(mobilecheck())
-          {
-             //Do something
-          }
+     //3. Slick
+       $('.proj').slick({
+           centerMode:true,
+           arrows:false
+       });
+
+    /*
 
 
       //detect if mobile browser or not

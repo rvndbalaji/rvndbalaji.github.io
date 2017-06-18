@@ -1,4 +1,5 @@
 /* -----------------------------------------------
+/* -----------------------------------------------
 /* How to use? : Check the GitHub README
 /* ----------------------------------------------- */
 
@@ -31,7 +32,7 @@ particlesJS('p_white',
         "type": "circle",
         "stroke": {
           "width": 0,
-          "color": "#ffffff"
+          "color": "#0079CC"
         },
         "polygon": {
           "nb_sides": 5
@@ -43,13 +44,13 @@ particlesJS('p_white',
         }
       },
       "opacity": {
-        "value": 0.5,
+        "value": 1,
         "random": true,
         "anim": {
           "enable": false,
           "speed": 1,
           "opacity_min": 0.1,
-          "sync": false
+          "sync": true
         }
       },
       "size": {
@@ -65,9 +66,10 @@ particlesJS('p_white',
       "line_linked": {
         "enable": true,
         "distance": 150,
-        "color": "#ffffff",
-        "opacity": 0.25,
-        "width": 1
+        "color": "#0079CC",
+        "opacity": 0.3,
+        "width": 1,
+
       },
       "move": {
         "enable": true,
