@@ -4,6 +4,7 @@
     background-position: bottom;
     background-color: transparent;
     min-width: 100vw;
+    border-radius: 0 !important;
     min-height: 100vh;
     margin-bottom: 0;
     background-repeat: no-repeat;
