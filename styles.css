@@ -5,6 +5,13 @@
     background-color: transparent;
     width: 100vw;
     height: 100vh;
+    margin-bottom: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(images/lake.jpg);
+    background-color: rgba(0,0,0,0.4);
+    background-blend-mode: multiply;
 }
 .jumbo_text
 {
@@ -37,23 +44,31 @@
     max-width: 20rem;;
     max-height: 20rem;
     margin: auto;
-    margin-top: -2.15em;
+    margin-bottom: 3rem;
+
 }
 
 /*START OF ABOUT.HTML*/
-#about_text
+#about_text, #proj
 {
+    height: 100vh;
+    width: 100vw;
     padding: 3%;
     font-size: 120%;
+    background-color: #f6f6f6;
     text-align: center;
 }
 
 
 .title_text
 {
-    color: #000000;
-    text-shadow: 0 0rem 0.1rem black;
+    color: #4E747B;
+    text-shadow: 0 0rem 0.1rem white;
     font-size: 150%;
+}
+#abt_content
+{
+    color: #4E747B;
 }
 
 #my_subtitle
@@ -122,7 +137,6 @@ a:hover, a:active, a:focus, a:visited, a:active
 }
 
 
-
 .navbar-fixed-top {
     position: absolute;
 }
@@ -134,11 +148,10 @@ ul {
 body
 {
     overflow-x: hidden;
-    background-color: #010422;
 }
 .skill_box
 {
-    color: black;
+    color: white;
     padding-top: 1rem;
     margin: 1rem;
     transition: transform 200ms;
@@ -161,54 +174,38 @@ body
     padding-left: 1rem;
     padding-right: 1rem;
 }
-.skill_android
+
+#green
 {
-  background-color: #8BC34A;
-}
-.skill_web
-{
-  background-color: #E44D26;
-}
-.skill_vb
-{
-  background-color: #0079CC;
-}
-.skill_other
-{
-  background-color: #FFB300;
-}
+    padding: 5rem;
+    padding-top: 10rem;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(images/green.jpg);
 
-
-#grad {
-     background-color: transparent;
-
-
-}
-
-#gallery {
-       background-color: transparent;
-
-}
-
-
-.proj_box {
-    color: black;
-}
-.proj
-{
-    background-color: black;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-.proj div
-{
-    height: 20rem;
-    margin-bottom: 5rem;
-}
-
-
-.proj_bookshare {
-    background-image: url(images/bookshare.jpeg);
+    background-attachment: fixed;
     background-size: cover;
-    background-position: center;
+    background-color: rgba(0,0,0,0.3);
+    background-blend-mode: multiply;
+
+}
+
+.skill_text {
+    color: white;
+    text-shadow: 0 0rem 0.1rem white;
+    font-size: 150%;
+}
+
+.row1 {
+    margin-top: 13rem;
+}
+
+#skill_heading {
+     font-size: 390%;
+}
+
+#proj_heading {
+     font-size: 300%;
+     color: #4E747B;
 }
