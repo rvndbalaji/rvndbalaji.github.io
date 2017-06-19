@@ -3,8 +3,8 @@
     text-align: center;
     background-position: bottom;
     background-color: transparent;
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     margin-bottom: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -51,8 +51,8 @@
 /*START OF ABOUT.HTML*/
 #about_text, #proj
 {
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    min-width: 100vw;
     padding: 3%;
     font-size: 120%;
     background-color: #f6f6f6;
@@ -180,8 +180,8 @@ body
     padding: 5rem;
     padding-top: 10rem;
     text-align: center;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    min-width: 100vw;
     background-image: url(images/green.jpg);
 
     background-attachment: fixed;
