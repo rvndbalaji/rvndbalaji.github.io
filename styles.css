@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Calluna';
+  src: url('fonts/Calluna.eot'); /* IE9 Compat Modes */
+  src: url('fonts/Calluna.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('fonts/Calluna.woff') format('woff'), /* Modern Browsers */
+       url('Calluna.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Calluna.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
 .jumbotron
 {
     text-align: center;
@@ -13,7 +21,6 @@
     -moz-background-attachment:fixed;
     -o-background-attachment:fixed;
 
-
     background-size: cover;
 
     background-image: url(images/lake.jpg);
@@ -22,7 +29,6 @@
 }
 .jumbo_text
 {
-    font-family: monospace,monospace;
     color: #ffffff;
     text-shadow: 0px 0px 1px white;
 }
@@ -64,6 +70,7 @@
     font-size: 120%;
     background-color: #f6f6f6;
     text-align: center;
+
 }
 
 
@@ -80,6 +87,7 @@
 
 #my_subtitle
 {
+     font-family: monospace,monospace;
     font-size: 190%;
 }
 
@@ -112,7 +120,8 @@ li
 
 a {
     font-weight: bold;
-    font-family: monospace,monospace;
+
+    font-family: 'Calluna';
 }
 a:hover, a:active, a:focus, a:visited, a:active
 {
@@ -129,7 +138,7 @@ a:hover, a:active, a:focus, a:visited, a:active
     position: relative;
     cursor: pointer;
     cursor: hand;
-    text-shadow: 0 0 0 white;
+    text-shadow: 0 0 0.1rem white;
 	border-bottom: 2px solid transparent;
 	transition: border 400ms;
 	color: #ffffff;
@@ -154,6 +163,7 @@ ul {
 
 body
 {
+    font-family: 'Calluna';
     overflow-x: hidden;
 }
 .skill_box
@@ -163,6 +173,7 @@ body
     margin: 1rem;
     transition: transform 200ms;
 }
+
 .skill_box:hover
 {
     transform: translateY(-12%);
@@ -177,6 +188,7 @@ body
 }
 .skill_desc
 {
+    font-size: 115%;
     padding-bottom: 1rem;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -198,11 +210,7 @@ body
 
 }
 
-.skill_text {
-    color: white;
-    text-shadow: 0 0rem 0.1rem white;
-    font-size: 150%;
-}
+
 
 .row1 {
     margin-top: 13rem;
