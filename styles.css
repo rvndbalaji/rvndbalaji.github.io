@@ -80,7 +80,7 @@
 }
 #proj
 {
-     background-color: rgba(0,0,0,0.3);
+     background-color: rgba(0,0,0,0.1);
 }
 
 .title_text
@@ -122,15 +122,15 @@ li a{
     font-weight: bold;
     font-family: 'Calluna';
 }
-li a:hover, li a:active, li a:focus, li a:visited, li a:active
+li a:hover, li a:active, li a:focus, li a:visited
+{
+    color: white;
+}
+.proj_link a:hover, .proj_link a:active, .proj_link a:focus, .proj_link a:visited
 {
     color: black;
 }
-.proj_link a:hover, .proj_link a:active, .proj_link a:focus, .proj_link a:visited, .proj_link a:active
-{
-    color: black;
-}
-a:hover, a:active, a:focus, a:visited, a:active
+a:hover, a:active, a:focus, a:visited
 {
     text-decoration: none;
 }
@@ -192,6 +192,7 @@ body
 .skill_title {
     font-size: 250%;
 }
+
 .skill_desc
 {
     font-size: 115%;
@@ -210,7 +211,7 @@ body
     background-image: url(images/green.jpg);
     background-attachment: fixed;
     background-size: cover;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.4);
     background-blend-mode: multiply;
 
 }
@@ -231,11 +232,19 @@ body
      text-shadow: 0 0 0.1rem black;
 
 }
-
+.proj_desc
+{
+    font-size: 115%;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.proj_title {
+    font-size: 200%;
+}
 .proj_box {
     padding-top: 1rem;
     margin: 1rem;
-    transition: transform 200ms;
 }
 
 .proj_img {
@@ -243,22 +252,37 @@ body
 }
 
 .proj_lang_vb {
-    background-color: rgb(103,33,121);
+     border-top: solid rgb(161, 76, 183);
 }
 
 .proj_lang_android {
-    background-color: rgb(164,198,57);
+    border-top: solid rgb(164,198,57);
 }
 
 .proj_link {
+    padding: 1rem;
     margin-bottom: 5rem;
+    color: black;
+    transition: background 400ms;
+}
+.proj_link:hover {
+   background-color: rgba(0,0,0,0.3);
 }
 
 .proj_lang_java {
-    background-color: #F44336;
+     border-top: solid rgb(244, 67, 54);
+}
+
+.proj_lang_py {
+     border-top: solid rgb(53,114,165);
 }
 
 .proj_lang {
-    padding: 0.3rem;
-    width:100%;
+    font-weight: bold;
+    padding-top: 0.4rem;
+}
+
+
+.proj_lang_git {
+         border-top: solid black;
 }
