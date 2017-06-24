@@ -69,30 +69,29 @@
     min-width: 100vw;
     padding: 3%;
     font-size: 120%;
-    background-color: #f6f6f6;
-    background-image: url(images/blue.jpg);
+    background-color: rgba(0,0,0,0.1);
+    background-image: url(images/triangle.png);
     background-repeat: no-repeat;
+    background-position: bottom;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-blend-mode: multiply;
-
     text-align: center;
 }
 #proj
 {
-     background-image: url(images/purple.jpg);
-     background-color: rgba(0,0,0,0.5)
+     background-color: rgba(0,0,0,0.3);
 }
 
 .title_text
 {
-    color: #4E747B;
-    text-shadow: 0 0rem 0.1rem white;
+    color: black;
+    text-shadow: 0 0rem 0.1rem black;
     font-size: 150%;
 }
 #abt_content
 {
-    color: #4E747B;
+    color: black;
 }
 
 #my_subtitle
@@ -114,15 +113,6 @@
     100% { opacity: 0; }
 }
 
-#p_white
-{
-    z-index: 0;
-    position: relative;
-    margin-top : -50rem;
-    height: 100vh;
-    width: 100vw;
-}
-
 li
 {
     display: inline-flex;
@@ -134,11 +124,11 @@ li a{
 }
 li a:hover, li a:active, li a:focus, li a:visited, li a:active
 {
-    color: white;
+    color: black;
 }
 .proj_link a:hover, .proj_link a:active, .proj_link a:focus, .proj_link a:visited, .proj_link a:active
 {
-    color: white;
+    color: black;
 }
 a:hover, a:active, a:focus, a:visited, a:active
 {
@@ -218,7 +208,6 @@ body
     min-height: 100vh;
     min-width: 100vw;
     background-image: url(images/green.jpg);
-
     background-attachment: fixed;
     background-size: cover;
     background-color: rgba(0,0,0,0.3);
@@ -238,7 +227,9 @@ body
 
 #proj_heading {
      font-size: 250%;
-     color: #4E747B;
+     color: black;
+     text-shadow: 0 0 0.1rem black;
+
 }
 
 .proj_box {
