@@ -79,8 +79,7 @@
     text-align: center;
 }
 #proj
-{
-     min-width: 100vw;
+{   margin: 0;
      background-color: rgba(0,0,0,0.1);
 }
 
