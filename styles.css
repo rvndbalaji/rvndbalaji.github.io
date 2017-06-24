@@ -208,7 +208,6 @@ body
     padding-top: 10rem;
     text-align: center;
     min-height: 100vh;
-    min-width: 100vw;
     background-image: url(images/green.jpg);
     background-attachment: fixed;
     background-size: cover;
@@ -285,5 +284,5 @@ body
 
 
 .proj_lang_git {
-         border-top: solid black;
+    border-top: solid black;
 }
