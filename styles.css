@@ -208,6 +208,7 @@ body
     padding-top: 10rem;
     text-align: center;
     min-height: 100vh;
+    min-width: 100vh;
     background-image: url(images/green.jpg);
     background-attachment: fixed;
     background-size: cover;
