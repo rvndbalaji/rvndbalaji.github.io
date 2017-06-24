@@ -67,7 +67,6 @@
 #about_text, #proj
 {
     min-height: 100vh;
-    min-width: 100vw;
     padding: 3%;
     font-size: 120%;
     background-color: rgba(0,0,0,0.1);
@@ -81,6 +80,7 @@
 }
 #proj
 {
+     min-width: 100vw;
      background-color: rgba(0,0,0,0.1);
 }
 
