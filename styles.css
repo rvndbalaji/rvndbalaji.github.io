@@ -64,7 +64,7 @@
 
 /*START OF ABOUT.HTML*/
 
-#about_text, #proj
+#about_text, #proj, #cont
 {
     min-height: 100vh;
     padding: 3%;
@@ -74,13 +74,18 @@
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
-    background-attachment: scroll;
+    background-attachment: fixed;
     background-blend-mode: multiply;
     text-align: center;
 }
 #proj
-{   margin: 0;
+{
      background-color: rgba(0,0,0,0.1);
+     background-attachment: scroll;
+}
+#cont
+{
+    background-image: url(images/cont.jpg);
 }
 
 .title_text
@@ -245,6 +250,9 @@ body
     padding-top: 1rem;
     margin: 1rem;
 }
+#p_row1 {
+     margin-bottom: 2em;
+}
 
 .proj_img {
     max-height: 7rem;
@@ -259,8 +267,6 @@ body
 }
 
 .proj_link {
-    padding: 1rem;
-    margin-bottom: 5rem;
     color: black;
     transition: background 400ms;
 }
@@ -284,4 +290,10 @@ body
 
 .proj_lang_git {
     border-top: solid black;
+}
+
+#cont_heading {
+     font-size: 250%;
+     color: white;
+     text-shadow: 0 0 0.1rem white;
 }
