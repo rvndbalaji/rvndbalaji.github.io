@@ -17,20 +17,15 @@
     margin-bottom: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    -webkit-background-attachment:fixed;
-    -moz-background-attachment:fixed;
-    -o-background-attachment:fixed;
-
     background-size: cover;
-
     background-image: url(images/lake.jpg);
     background-color: rgba(0,0,0,0.4);
     background-blend-mode: multiply;
 }
 .jumbo_text
 {
-    color: #ffffff;
-    text-shadow: 0px 0px 1px white;
+    color: white;
+    text-shadow: 0 0 0.2rem gray;
 }
 
 #my_name
@@ -38,18 +33,22 @@
     font-size: 390%;
 }
 
-.img-circle:hover {
-    box-shadow: 0 0 0.5em 0.1em black;
+.img-circle:hover
+{
+    box-shadow: 0 0 0.5em 0.1em white;
 }
 .img-circle
 {
-    max-height: 5rem;
     position: relative;
     z-index: 3;
     margin: 1em;
     transition: 0.3s box-shadow;
 }
-
+@keyframes padder
+{
+    0% { padding: 0.0rem; }
+    100% { padding: 1.0rem; }
+}
 #dp
 {
     z-index: 2;
@@ -82,6 +81,7 @@
 {
      background-color: rgba(0,0,0,0.1);
      background-attachment: scroll;
+
 }
 #cont
 {
@@ -128,6 +128,10 @@ li a{
     font-family: 'Calluna';
 }
 li a:hover, li a:active, li a:focus, li a:visited
+{
+    color: white;
+}
+.row a:hover, .row a:active, .row a:focus, .row a:visited
 {
     color: white;
 }
@@ -217,7 +221,7 @@ body
     background-size: cover;
     background-color: rgba(0,0,0,0.4);
     background-blend-mode: multiply;
-
+    background-position: center;
 }
 
 
@@ -296,4 +300,91 @@ body
      font-size: 250%;
      color: white;
      text-shadow: 0 0 0.1rem white;
+}
+
+.label
+{
+    float: left;
+    color: lightgray;
+    margin-left: -0.8rem;
+}
+
+.inputbox
+{
+    margin: 2rem;
+    margin-bottom: 3rem;
+    color: #f4f4f4;
+}
+
+.form {
+    padding: 2rem;
+    font-family: 'Spectral',serif;
+}
+
+.inputtext {
+     background-color: transparent;
+    border: none;
+    border-bottom: 0.1rem solid lightgray;
+    outline: none;
+    width: 100%;
+    font-size: 200%;
+}
+
+#msg, #ph {
+     font-size: 120%;
+}
+
+.btn
+{
+    margin-left: 2.1rem;
+    background-color: transparent;
+    border: 0.2rem solid white;
+    border-radius: 0%;
+    color: white;
+    transition: color 400ms;
+    transition: background 400ms;
+    font-weight: bold;
+    padding: 1rem;
+    width: 35%;
+}
+
+.btn:hover
+{
+    color: black;
+    background-color: white;
+}
+.infome {
+    color: white;
+    margin-top: 10rem;
+}
+
+
+.inf_icon {
+    border-radius: 32%;
+    border: 0.2rem solid white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    transition: box-shadow 400ms;
+}
+.inf_icon:hover{
+    box-shadow: 0 0 1rem white;
+}
+
+.padder {
+    padding-top: 1.5rem;
+    width: auto;
+}
+
+.img_padder {
+    width: auto;
+}
+
+.inf_text {
+    word-break: break-all;
+    color: white;
+    font-family: 'Spectral';
+}
+
+.last {
+        background-color: rgba(0,0,0,0.3);
 }
