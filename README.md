@@ -1,3 +1,5 @@
+
+![CheckItOut](http://forthebadge.com/images/badges/built-with-swag.svg)
 ![CheckItOut](http://forthebadge.com/images/badges/check-it-out.svg)
 
 Welcome to my portfolio
