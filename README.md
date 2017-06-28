@@ -1,9 +1,7 @@
 Welcome to my portfolio
 Everything you need to know about my skills you'll find them in my site
 
-![CheckItOut](http://forthebadge.com/images/badges/built-with-swag.svg) and 
-
-![CheckItOut](http://forthebadge.com/images/badges/powered-by-electricity.svg) 
+![CheckItOut](http://forthebadge.com/images/badges/built-with-swag.svg) and ![CheckItOut](http://forthebadge.com/images/badges/powered-by-electricity.svg) 
 
 
 What does it use?
