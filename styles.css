@@ -86,6 +86,7 @@
 #cont
 {
     background-image: url(images/cont.jpg);
+    background-color: rgba(0,0,0,0.3);
 }
 
 .title_text
@@ -385,6 +386,4 @@ body
     font-family: 'Spectral';
 }
 
-.last {
-        background-color: rgba(0,0,0,0.3);
-}
+
