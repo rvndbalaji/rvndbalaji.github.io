@@ -1,4 +1,4 @@
-[![Wow](http://forthebadge.com/images/badges/check-it-out.svg)
+![CheckItOut](http://forthebadge.com/images/badges/check-it-out.svg)
 
 Welcome to my portfolio
 Everything you need to know about my skills you'll find them in my site
