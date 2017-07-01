@@ -1,4 +1,4 @@
-//This function is the typer fucntion which prints a character one by one by taking a string and delay as input
+//This function is the typer function which prints a character one by one by taking a string and delay as input
 var type = function (component, message, index, interval) {
 
     if (index < message.length) {
@@ -90,54 +90,43 @@ $(function () {
 
 });
 
-//This is the first functio nthat is ever called. It executes and animates the Load Screen, and implicitly calls load_page()
+//This is the first function that is ever called. It executes and animates the Load Screen, and implicitly calls load_page()
 //So until the animation is complete the page isn't loaded
 var loadscreen_animate = function () {
-    var rep = 0;
+    var rep = 1;
     var exit = 0;
-
+    $("#load_my_subtitle").text("> Coder.");
     var loadtyper = setInterval(function () {
-        if (exit) {
+
+        var text = "";
+        if (rep == 1) {
+            rep = 1;
+            text = " Designer. ";
+            type("#load_my_subtitle", text, -1, 40);
+            rep++;
+
+        } else {
+            text = "Enthusiast.";
+            type("#load_my_subtitle", text, -1, 40);
             clearInterval(loadtyper);
             load_page();
             return;
         }
-        $("#load_my_subtitle").text("> ");
-        var text = "";
-        switch (rep) {
-            case 1:
-                rep = 1;
-                text = "Designer.";
-                break;
-            case 2:
-                rep = 2;
-                text = "Enthusiast.";
-                exit = 1;
-                break;
-            default:
-                rep = 0;
-                text = "Coder.";
-        }
 
-        type("#load_my_subtitle", text, -1, 40);
-        rep = (rep + 1) % 3;
     }, 2000);
 
 }
 
 loadscreen_animate();
 //This function is called when the page finishes loading
+
 $(document).ready(function () {
-
-
-    //2.Smooth scroll
+    //1.Smooth scroll
     $('a').click(function () {
         $('html, body').animate({
             scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
         }, 1000);
         return false;
     });
-
-
 
 });
