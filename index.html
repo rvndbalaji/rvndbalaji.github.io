@@ -7,7 +7,7 @@
     <!--jQUERY should always come first before Bootstrap-->
     <base target="_blank">
     <script src="frameworks/jquery-3.2.1.js"></script>
-
+    <link rel="icon" href="images/dp.png">
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,7 +36,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-fixed-top">
+    <nav class="navbar navbar-fixed-top menu">
         <div class="container">
             <ul align="center">
                 <li><a id="autoclick" class="hyperlink" href="#start">Home</a></li>
@@ -47,8 +47,12 @@
     </nav>
 
 
+    <div class="LOAD_SCREEN" align="center">
+        <span id="load_my_subtitle">> </span>
+    </div>
+
     <a name="start"></a>
-    <div class="container-fluid">
+    <div class="container-fluid ENTIRE_PAGE">
         <div class="row">
             <div class="jumbotron col-md-12 col-sm-6 col-xs-6">
 
@@ -80,7 +84,7 @@
             <div class="row">
                 <div id="about_text" class="col-md-12 col-sm-12 col-xs-12">
 
-                    <img id="dp" src="images/dp.jpg" class="img-circle img-responsive">
+                    <img id="dp" src="images/dp.png" class="img-circle img-responsive">
 
                     <span class="title_text">
      Hi there! I design and develop beautiful, engaging websites and feature-rich apps for Android </span>

@@ -9,6 +9,18 @@
     /* Legacy iOS */
 }
 
+.ENTIRE_PAGE {
+    display: none;
+    opacity: 0;
+    animation: appear 1s normal;
+}
+
+.LOAD_SCREEN {
+    opacity: 1.0;
+    height: 100vh;
+    width: 100vw;
+}
+
 .jumbotron {
     text-align: center;
     background-position: bottom;
@@ -115,6 +127,15 @@
     animation: cursor 1s infinite;
 }
 
+@keyframes appear {
+    0% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+
 @keyframes cursor {
     0% {
         opacity: 0.0;
@@ -196,6 +217,7 @@ ul {
 body {
     font-family: 'Calluna';
     overflow-x: hidden;
+    background: #004b60;
 }
 
 .skill_box {
@@ -394,4 +416,32 @@ body {
     word-break: break-all;
     color: white;
     font-family: 'Spectral';
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.menu {
+    opacity: 0;
+    display: none;
+}
+
+#load_my_subtitle {
+    font-family: monospace, monospace;
+    font-size: 400%;
+    color: white;
+    line-height: 90vh;
+    vertical-align: middle;
+}
+
+#load_my_subtitle:after {
+    content: "_";
+    opacity: 1;
+    animation: cursor 1s infinite;
 }
