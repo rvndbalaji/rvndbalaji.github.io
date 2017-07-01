@@ -38,15 +38,15 @@ var load_page = function () {
         switch (rep) {
             case 1:
                 rep = 1;
-                text = "Designer.";
+                text = "Designer";
                 break;
             case 2:
                 rep = 2;
-                text = "Enthusiast.";
+                text = "Enthusiast";
                 break;
             default:
                 rep = 0;
-                text = "Coder.";
+                text = "Coder";
         }
 
         type("#my_subtitle", text, -1, 40);
@@ -124,6 +124,7 @@ var loadscreen_animate = function () {
 }
 
 loadscreen_animate();
+//load_page();
 //This function is called when the page finishes loading
 $(document).ready(function () {
     //1.Smooth scroll
@@ -133,5 +134,15 @@ $(document).ready(function () {
         }, 1000);
         return false;
     });
+
+
+    $("img#play").one('animationend', function () {
+        $("img.social").css('animation', 'float 2s infinite');
+        $("img#fb").css('animation-delay', '0s');
+        $("img#gh").css('animation-delay', '1s');
+        $("img#li").css('animation-delay', '1.5s');
+        $("img#play").css('animation-delay', '2s');
+    });
+
 
 });

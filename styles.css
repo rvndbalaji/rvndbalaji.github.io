@@ -46,6 +46,10 @@
     font-size: 390%;
 }
 
+.animated {
+    animation-delay: 1s;
+}
+
 .img-circle:hover {
     box-shadow: 0 0 0.5em 0.1em white;
 }
@@ -444,4 +448,32 @@ body {
     content: "_";
     opacity: 1;
     animation: cursor 1s infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(-10%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+img#fb {
+    animation-delay: 1s;
+}
+
+img#gh {
+    animation-delay: 1.5s;
+}
+
+img#li {
+    animation-delay: 2s;
+}
+
+img#play {
+    animation-delay: 2.5s;
 }
