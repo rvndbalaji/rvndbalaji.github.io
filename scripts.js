@@ -21,7 +21,7 @@ var load_page = function () {
 
 
         $(".ENTIRE_PAGE, .menu")
-            .css('display', 'block')
+            .css('display', '')
             .animate({
                 opacity: 1.0
             }, 1000);
