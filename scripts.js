@@ -95,19 +95,22 @@ $(function () {
 var loadscreen_animate = function () {
     var rep = 1;
     var exit = 0;
-    $("#load_my_subtitle").text("> Coder.");
+    $("#load_my_subtitle").text("> Coder");
     var loadtyper = setInterval(function () {
 
         var text = "> ";
+        if (rep == 3) {
+            text = "Welcome";
+        }
         $("#load_my_subtitle").text(text);
 
         if (rep == 1) {
-            text = " Designer. ";
+            text = "Designer";
             type("#load_my_subtitle", text, -1, 40);
             rep++;
 
         } else if (rep == 2) {
-            text = "Enthusiast.";
+            text = "Enthusiast";
             type("#load_my_subtitle", text, -1, 40);
             rep++;
         } else {
