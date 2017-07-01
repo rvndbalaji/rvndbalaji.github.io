@@ -98,16 +98,22 @@ var loadscreen_animate = function () {
     $("#load_my_subtitle").text("> Coder.");
     var loadtyper = setInterval(function () {
 
-        var text = "";
+        var text = "> ";
+        if (rep == 3) {
+            var text = "> Loading... ";
+        }
+        $("#load_my_subtitle").text(text);
+
         if (rep == 1) {
-            rep = 1;
             text = " Designer. ";
             type("#load_my_subtitle", text, -1, 40);
             rep++;
 
-        } else {
+        } else if (rep == 2) {
             text = "Enthusiast.";
             type("#load_my_subtitle", text, -1, 40);
+            rep++;
+        } else {
             clearInterval(loadtyper);
             load_page();
             return;
@@ -119,7 +125,6 @@ var loadscreen_animate = function () {
 
 loadscreen_animate();
 //This function is called when the page finishes loading
-
 $(document).ready(function () {
     //1.Smooth scroll
     $('a').click(function () {
