@@ -99,9 +99,6 @@ var loadscreen_animate = function () {
     var loadtyper = setInterval(function () {
 
         var text = "> ";
-        if (rep == 3) {
-            var text = "> Loading... ";
-        }
         $("#load_my_subtitle").text(text);
 
         if (rep == 1) {
