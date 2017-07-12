@@ -386,6 +386,20 @@ body {
     background-color: white;
 }
 
+.btn_resume {
+    background-color: rgba(77, 158, 173, 0.46);
+    border: 0.2rem solid #4d9ead;
+    margin-left: 0;
+    color: black;
+    transition: background 400ms;
+    transition: color 400ms;
+}
+
+.btn_resume:hover {
+    color: white;
+    background-color: #4d9ead;
+}
+
 .infome {
     color: white;
     margin-top: 10rem;
