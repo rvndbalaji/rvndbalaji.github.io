@@ -214,8 +214,8 @@ a:visited {
     position: absolute;
 }
 
-ul {
-    margin-right: 3rem;
+.ul {
+    padding: 0;
 }
 
 body {
@@ -289,12 +289,7 @@ body {
 }
 
 .proj_box {
-    padding-top: 1rem;
     margin: 1rem;
-}
-
-#p_row1 {
-    margin-bottom: 2em;
 }
 
 .proj_img {
@@ -312,6 +307,7 @@ body {
 .proj_link {
     color: black;
     transition: background 400ms;
+    margin-bottom: 2em;
 }
 
 .proj_link:hover {
@@ -472,8 +468,4 @@ img#gh {
 
 img#li {
     animation-delay: 2s;
-}
-
-img#play {
-    animation-delay: 2.5s;
 }

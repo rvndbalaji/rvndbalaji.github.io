@@ -9,54 +9,6 @@ var type = function (component, message, index, interval) {
     }
 }
 
-//This function when called proceeds to load the actual webpage after the loading animation is finished!
-var load_page = function () {
-
-    //This function is executed after the loading is done. It hides the LOAD_SCREEN and shows the FULL_PAGE
-    setTimeout(function () {
-
-        $(".LOAD_SCREEN").animate({
-            opacity: 0.0
-        }, 1000).css('display', 'none');
-
-
-        $(".ENTIRE_PAGE, .menu")
-            .css('display', 'block')
-            .animate({
-                opacity: 1.0
-            }, 1000);
-    }, 1000);
-
-
-
-    //This function registers a permanant Async task that constantly keeps performing the typing animation that was earlier defined
-    //in loading screen. Its redundant, but I was unable to give a unique function without global variables
-    var rep = 0;
-    setInterval(function () {
-        $("#my_subtitle").text("> ");
-        var text = "";
-        switch (rep) {
-            case 1:
-                rep = 1;
-                text = "Designer";
-                break;
-            case 2:
-                rep = 2;
-                text = "Enthusiast";
-                break;
-            default:
-                rep = 0;
-                text = "Coder";
-        }
-
-        type("#my_subtitle", text, -1, 40);
-        rep = (rep + 1) % 3;
-    }, 2000);
-
-
-    //End of Page Load Function
-}
-
 
 
 //This anonymous function registers an onMouseScroll Event Listener and overrides the default scroll
@@ -90,43 +42,23 @@ $(function () {
 
 });
 
-//This is the first function that is ever called. It executes and animates the Load Screen, and implicitly calls load_page()
-//So until the animation is complete the page isn't loaded
-var loadscreen_animate = function () {
-    var rep = 1;
-    var exit = 0;
-    $("#load_my_subtitle").text("> Coder");
-    var loadtyper = setInterval(function () {
 
-        var text = "> ";
-        if (rep == 3) {
-            text = "Welcome";
-        }
-        $("#load_my_subtitle").text(text);
 
-        if (rep == 1) {
-            text = "Designer";
-            type("#load_my_subtitle", text, -1, 40);
-            rep++;
-
-        } else if (rep == 2) {
-            text = "Enthusiast";
-            type("#load_my_subtitle", text, -1, 40);
-            rep++;
-        } else {
-            clearInterval(loadtyper);
-            load_page();
-            return;
-        }
-
-    }, 2000);
-
-}
-
-loadscreen_animate();
-//load_page();
-//This function is called when the page finishes loading
 $(document).ready(function () {
+
+    setTimeout(function () {
+
+        $(".LOAD_SCREEN").animate({
+            opacity: 0.0
+        }, 1000).css('display', 'none');
+
+        $(".ENTIRE_PAGE, .menu")
+            .css('display', 'block')
+            .animate({
+                opacity: 1.0
+            }, 1000);
+    }, 1000);
+
     //1.Smooth scroll
     $('a').click(function () {
         $('html, body').animate({
@@ -136,13 +68,42 @@ $(document).ready(function () {
     });
 
 
-    $("img#play").one('animationend', function () {
+    //This function registers a permanant Async task that constantly keeps performing the typing animation that was earlier defined
+    var rep = 0;
+    setInterval(function () {
+        $("#my_subtitle").text("> ");
+        var text = "";
+        switch (rep) {
+            case 1:
+                rep = 1;
+                text = "Designer";
+                break;
+            case 2:
+                rep = 2;
+                text = "Enthusiast";
+                break;
+            default:
+                rep = 0;
+                text = "Coder";
+        }
+
+        type("#my_subtitle", text, -1, 40);
+        rep = (rep + 1) % 3;
+    }, 2000);
+
+
+
+
+    $("img#li").one('animationend', function () {
         $("img.social").css('animation', 'float 2s infinite');
-        $("img#fb").css('animation-delay', '0s');
-        $("img#gh").css('animation-delay', '1s');
-        $("img#li").css('animation-delay', '1.5s');
-        $("img#play").css('animation-delay', '2s');
+        $("img#fb").css('animation-delay', '1s');
+        $("img#gh").css('animation-delay', '1.5s');
+        $("img#li").css('animation-delay', '2s');
+
     });
 
 
+});
+$("#clear_btn").click(function () {
+    $('form').find("input[type=text], textarea").val("");
 });

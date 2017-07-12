@@ -38,9 +38,11 @@
 <body>
     <nav class="navbar navbar-fixed-top menu">
         <div class="container">
-            <ul align="center">
-                <li><a id="autoclick" class="hyperlink" href="#start">Home</a></li>
-                <li><a class="hyperlink">My Skills</a></li>
+            <ul class="ul" align="center">
+                <li><a id="autoclick" class="hyperlink" href="#start">Me</a></li>
+                <li><a id="autoclick" class="hyperlink" href="#skills">Skills</a></li>
+                <li><a id="autoclick" class="hyperlink" href="#projects">Projects</a></li>
+                <li><a id="autoclick" class="hyperlink" href="#contact">Contact</a></li>
             </ul>
 
         </div>
@@ -49,11 +51,11 @@
 
 
 
-    <a name="start"></a>
+
     <div class="LOAD_SCREEN row" align="center">
         <span id="load_my_subtitle">> </span>
     </div>
-    <div class="container-fluid ENTIRE_PAGE">
+    <div ng-app="" class="container-fluid ENTIRE_PAGE">
         <div class="row">
             <div class="jumbotron col-md-12 col-sm-6 col-xs-6">
 
@@ -75,15 +77,11 @@
                     <a href="https://www.linkedin.com/in/aravindbalaji/" target="_blank">
                         <img id="li" class="social animated zoomInUp img-circle" src="images/linkedin.png"></img>
                     </a>
-
-                    <a href="https://play.google.com/store/apps/developer?id=Aravind+Balaji" target="_blank">
-                        <img id="play" class="social animated zoomInUp img-circle" src="images/play.png"></img>
-                    </a>
-
                     <!--div id ="p_white"></div-->
                 </div>
             </div>
         </div>
+        <a name="start"></a>
         <div class="row">
             <div id="about_text" class="col-md-12 col-sm-12 col-xs-12">
 
@@ -97,6 +95,7 @@
             </div>
         </div>
 
+        <a name="skills"></a>
         <div class="row">
             <div id="green" class="col-md-12 col-sm-12 col-xs-12">
 
@@ -150,7 +149,7 @@
 
         </div>
 
-
+        <a name="projects"></a>
         <div class="row">
             <div id="proj" class="col-md-12 col-sm-12 col-xs-12">
                 <span id="proj_heading" class="jumbo_text">
@@ -196,7 +195,7 @@
 
                     </div>
                     <!--SECOND ROW-->
-                    <div class="proj_box row">
+                    <div id="p_row2" class="proj_box row">
                         <a href="https://github.com/rvndbalaji/WattpadToEbook">
                             <div class="col-md-4 proj_link">
 
@@ -229,7 +228,7 @@
         </div>
 
         <!--CONTACT ME SECTION-->
-
+        <a name="contact"></a>
         <div class="row">
             <div id="cont" class="col-md-12 col-sm-12 col-xs-12">
 
@@ -269,32 +268,37 @@
 
 
 
-                        <div class="form col-md-6 col-xs-12">
+                        <form class="form col-md-6 col-xs-12">
                             <div class="inputbox">
                                 <span class="label">What's your name?</span><br>
-                                <input id="name" class="inputtext" type="text">
+                                <input ng-model="name" id="name" name="subject" class="inputtext" type="text">
                             </div>
                             <div class="inputbox">
                                 <span class="label">Phone Num / Email</span><br>
-                                <input id="ph" class="inputtext" type="text">
+                                <input ng-model="phone" id="ph" class="inputtext" type="text">
                             </div>
                             <div class="inputbox">
                                 <span class="label">Send a message</span><br>
-                                <textarea id="msg" class="inputtext" rows="5"></textarea>
+                                <textarea ng-model="body" id="msg" class="inputtext" rows="5" name="body"></textarea>
                             </div>
-                            <button type="button" class="btn">Send Message</button>
 
-                            <button type="button" class="btn">Clear</button>
-                        </div>
+                            <a href="mailto:aravind.balaji@live.com?subject={{ name + ' - Message from your portfolio'}}&body={{ 'Contact Info: ' + phone + '<br><br>' + body + '<br><br><b>' + name +'</b>' }}">
+                                <button type="button" class="btn">Send Mail</button>
+                            </a>
+
+                            <button id="clear_btn" type="reset" class="btn">Clear</button>
                     </div>
                 </div>
-
-
             </div>
 
+
         </div>
+
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
     <script src="scripts.js"></script>
+
     <!--script src="frameworks/particles.js"></script>
 <script src="frameworks/particles_white.js"></script-->
 
