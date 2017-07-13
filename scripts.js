@@ -14,10 +14,14 @@ var type = function (component, message, index, interval) {
 //This anonymous function registers an onMouseScroll Event Listener and overrides the default scroll
 $(function () {
 
+
     var $window = $(window); //Window object
 
-    var scrollTime = 1; //Scroll time
+    var scrollTime = 0.8; //Scroll time
+
     var scrollDistance = $(window).height();
+    //var scrollDistance = $(window).height() / 3;
+
 
     //Distance. Use smaller value for shorter scroll and greater value for longer scroll
 
@@ -39,9 +43,12 @@ $(function () {
             overwrite: 5
         });
 
+
+
+
     });
 
-
+    //642 1284
 });
 
 
@@ -109,3 +116,5 @@ $(document).ready(function () {
 $("#clear_btn").click(function () {
     $('form').find("input[type=text], textarea").val("");
 });
+
+//This plugin allows the detection and listens to elements that are visible on the viewport
