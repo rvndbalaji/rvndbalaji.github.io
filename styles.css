@@ -93,6 +93,9 @@
     max-height: 20rem;
     margin: auto;
     margin-bottom: 3rem;
+    opacity: 0;
+    animation-delay: 0s;
+    animation-duration: 0.5s;
 }
 
 #dp:hover {
@@ -578,3 +581,5 @@ img#li {
 .resume_text {
     word-break: keep-all
 }
+
+

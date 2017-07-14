@@ -14,7 +14,6 @@ var type = function (component, message, index, interval) {
 //This anonymous function registers an onMouseScroll Event Listener and overrides the default scroll
 $(function () {
 
-
     var $window = $(window); //Window object
 
     var scrollTime = 0.8; //Scroll time
@@ -29,9 +28,13 @@ $(function () {
 
         event.preventDefault();
 
+        setTimeout(function () {
+            checkAnim();
+        }, (scrollTime * 1000) / 2);
         var delta = event.originalEvent.wheelDelta / 120 || -event.originalEvent.detail / 3;
         var scrollTop = $window.scrollTop();
         var finalScroll = scrollTop - parseInt(delta * scrollDistance);
+
 
         TweenMax.to($window, scrollTime, {
             scrollTo: {
@@ -42,7 +45,6 @@ $(function () {
             autoKill: true,
             overwrite: 5
         });
-
 
 
 
@@ -118,3 +120,31 @@ $("#clear_btn").click(function () {
 });
 
 //This plugin allows the detection and listens to elements that are visible on the viewport
+function isElementInViewport(elem) {
+    var $elem = $(elem);
+
+    // Get the scroll position of the page.
+    var scrollElem = ((navigator.userAgent.toLowerCase().indexOf('webkit') != -1) ? 'body' : 'html');
+    var viewportTop = $(scrollElem).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+
+    // Get the position of the element on the page.
+    var elemTop = Math.round($elem.offset().top);
+    var elemBottom = elemTop + $elem.height();
+
+    return ((elemTop < viewportBottom) && (elemBottom > viewportTop));
+}
+
+function checkAnim() {
+    var $elem = $("#dp");
+    //If animation has already been started
+
+    if (isElementInViewport($elem)) {
+        $elem.addClass('fadeInUp');
+    } else {
+
+        $elem.removeClass('fadeInUp');
+        $elem.css('opacity', '0.0');
+    }
+
+}
