@@ -24,7 +24,6 @@
 
 .jumbotron {
     text-align: center;
-    background-position: bottom;
     background-color: transparent;
     border-radius: 0 !important;
     min-height: 100vh;
@@ -271,7 +270,7 @@ a:visited {
 body {
     font-family: 'Calluna';
     overflow-x: hidden;
-    background: #004b60;
+    background: #151515;
 }
 
 .skill_box {
@@ -438,7 +437,7 @@ body {
 }
 
 .btn:hover {
-    color: white;
+    color: black;
     background-color: white;
 }
 
@@ -581,5 +580,3 @@ img#li {
 .resume_text {
     word-break: keep-all
 }
-
-
