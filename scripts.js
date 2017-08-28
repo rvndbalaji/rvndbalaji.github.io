@@ -118,9 +118,8 @@ $(document).ready(function () {
 $("#clear_btn").click(function () {
     $('form').find("input[type=text], textarea").val("");
 });
-        $elem.addClass('fadeInUp');
 
-/*
+
 //This plugin allows the detection and listens to elements that are visible on the viewport
 function isElementInViewport(elem) {
     var $elem = $(elem);
@@ -148,5 +147,5 @@ function checkAnim() {
         $elem.removeClass('fadeInUp');
         $elem.css('opacity', '0.0');
     }
-*/
+
 }
