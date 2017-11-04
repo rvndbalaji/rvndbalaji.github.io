@@ -584,4 +584,5 @@ img#li {
 .miner {
     width: 100vw;
     height: auto;
+    background-color: transparent;
 }

