@@ -580,3 +580,8 @@ img#li {
 .resume_text {
     word-break: keep-all
 }
+
+.miner {
+    width: 100vw;
+    height: auto;
+}
