@@ -304,8 +304,7 @@ body {
 }
 
 #green {
-    padding: 5rem;
-    padding-top: 10rem;
+    padding: 3rem;
     text-align: center;
     min-height: 100vh;
     background-image: url(images/green.jpg);
@@ -317,7 +316,7 @@ body {
 }
 
 .row1 {
-    margin-top: 13rem;
+    margin-top: 7rem;
 }
 
 #skill_heading {
@@ -586,3 +585,5 @@ img#li {
     height: auto;
     background-color: transparent;
 }
+
+
