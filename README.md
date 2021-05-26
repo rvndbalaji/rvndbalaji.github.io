@@ -10,19 +10,12 @@ What does it use?
 
 Can I just see it already!?
 
+
 ![CheckItOut](http://forthebadge.com/images/badges/check-it-out.svg)
-https://rvndbalaji.github.io/
+
+# http://aravindb.com/
 
 
-
-
-
-Be careful, because,
-
-![CheckItOut](http://forthebadge.com/images/badges/winter-is-coming.svg) 
 
 Badges
 [![StackShare](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/rvndbalaji/my-stack)
-
-
-![alt text](https://github.com/rvndbalaji/rvndbalaji.github.io/blob/master/Capture.PNG)
